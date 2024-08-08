@@ -19,9 +19,12 @@ const BLOG = {
 
   // 3.14.1版本后，欢迎语在此配置，英文逗号隔开 ,  即可支持多个欢迎语打字效果。
   GREETING_WORDS:
-    process.env.NEXT_PUBLIC_GREETING_WORDS ||
-    '欢迎来到我的博客🎉','岁月静好，心自安然，在时光里倾听内心的声音。','静守时光，看云卷云舒，感悟生活的诗意与美好。','生活是一场修行，在喧嚣中寻得内心的宁静。','思考是灵魂的漫步，在智慧的道路上不断前行。'
-
+    //process.env.NEXT_PUBLIC_GREETING_WORDS ||
+   // '欢迎来到我的博客🎉','岁月静好，心自安然，在时光里倾听内心的声音。','静守时光，看云卷云舒，感悟生活的诗意与美好。','生活是一场修行，在喧嚣中寻得内心的宁静。','思考是灵魂的漫步，在智慧的道路上不断前行。'
+  NOTICE_BAR: [
+    { title: '欢迎来到我的博客', url: 'https://blog.tangly1024.com' },
+    { title: '访问文档中心获取更多帮助', url: 'https://docs.tangly1024.com' }
+  ],
   CUSTOM_MENU: process.env.NEXT_PUBLIC_CUSTOM_MENU || false, // 支持Menu 类型，从3.12.0版本起，各主题将逐步支持灵活的二级菜单配置，替代了原来的Page类型，此配置是试验功能、默认关闭。
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'GH', // 您的昵称 
